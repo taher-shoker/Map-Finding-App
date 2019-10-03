@@ -1,0 +1,150 @@
+
+#map{
+position: relative;
+ 
+}
+
+polygon:hover,.cls-8:hover,.cls-6:hover,rect:hover  {
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+   fill: #6C757D !important;
+  cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  color: #ed1b33;
+}
+  
+
+
+/******************** Style Animation for Path svg ****************************/
+#one {
+  fill-opacity: 0;
+  stroke: #f00;
+  stroke-width: 15;
+  stroke-dasharray: 8000;
+  stroke-dashoffset: 9000;
+  animation-name: dash;
+  animation-duration: 8s;
+   animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+}
+
+@keyframes dash {
+  
+ 
+ to {
+    stroke-dashoffset: 0;
+   
+    
+  }
+}
+
+
+
+  /***********************Style for svg tags*****************************/
+  .cls-1 {
+    opacity: 0.65;
+  }
+
+  .cls-2 {
+    fill: #d7a260;
+  }
+
+  .cls-23, .cls-3, .cls-4 {
+    fill: #fff;
+  }
+
+  .cls-3 {
+    opacity: 0.64;
+  }
+
+  .cls-10, .cls-16, .cls-24, .cls-5 {
+    fill: none;
+  }
+
+  .cls-11, .cls-12, .cls-14, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+    stroke: #000;
+  }
+
+  .cls-10, .cls-11, .cls-12, .cls-14, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-24, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-10, .cls-11, .cls-12, .cls-14, .cls-17, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+    stroke-width: 3px;
+  }
+
+  .cls-6 {
+    fill: #3d6607;
+  }
+
+  .cls-7 {
+    fill: #f8ec28;
+  }
+
+  .cls-8 {
+    fill: #73c5e5;
+  }
+
+  .cls-18, .cls-20, .cls-9 {
+    fill: #f79a2b;
+  }
+
+  .cls-10 {
+    stroke: #a3a7aa;
+  }
+
+  .cls-11 {
+    fill: #abacb2;
+  }
+
+  .cls-12, .cls-15 {
+    fill: #bfbfbf;
+  }
+
+  .cls-13 {
+    opacity: 0.9;
+  }
+
+  .cls-14 {
+    fill: #126fc4;
+  }
+
+  .cls-17 {
+    fill: #ce6b11;
+  }
+
+  .cls-19, .cls-21 {
+    fill: #f7900d;
+  }
+
+  .cls-20, .cls-21 {
+    stroke-width: 0.75px;
+  }
+
+  .cls-22 {
+    fill: #ed1b33;
+    stroke: #a23400;
+    stroke-width: 4px;
+  }
+
+  .cls-23 {
+    font-size: 61.05px;
+    font-family: MyriadPro-Regular, Myriad Pro;
+  }
+
+  .cls-24 {
+    stroke: #1e2cd8;
+    stroke-width: 15px;
+  }

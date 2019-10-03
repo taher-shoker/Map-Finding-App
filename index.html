@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta name="author" content="Khalifa Computer Group - مجموعة خليفة للكمبيوتر">
+ <link href="" rel="shortcut icon" type="image/x-icon">
+
+
+ <title>Map App</title>
+   <!--=========== Bootstrap Style ===============-->
+   <link rel="stylesheet" href="./css/bootstrap.min.ltr.css">
+   <!--=========== FontAwesome  ===============-->
+   <link rel="stylesheet" href="./css/all.css">
+   <!--=========== Animations Css  ===============-->
+   <link rel="stylesheet" href="./css/hover.css">
+   <!--=========== animation Css  ===============-->
+   <link rel="stylesheet" href="./css/animate.css">
+  <!--=========== this page CSS Style ===============-->
+  <link rel="stylesheet" href="./css/index.css">
+ 
+ 
+</head>
+
+<body>
+  <!-- start page contain-->
+  <!-- start login modal -->
+  <div id="loginModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Setting Page</h5>
+         
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       
+        <div class="modal-body">
+          <div class="input-group ">
+            <input id="pass-modal" type="password" class="form-control" placeholder="Enter password" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit"  id="login-btn" class="btn btn-primary ml-3">login</button>
+          <button type="button" id="close-btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+<section>
+  
+    <div class="set-point">
+      <h4 class="title-screen">set the starting point</h4>
+      <div class="map">
+        <img src="./imgs/newMap.jpg" alt="" class="img-fluid">
+          <i class="fas fa-map-marker-alt flash animated infinite" id='point1' ></i>
+       
+      </div>
+      <!--- selection butttons -->
+      <div class="selection-btns">
+        <div><i class="fas fa-map-marker-alt fa-4x hvr-grow" id='one' style="color: #f80d65"><span>1</span></i></div>
+        <div><i class="fas fa-map-marker-alt fa-4x hvr-grow" id='two' style="color: #f80d65"><span>2</span></i></div>
+        <div><i class="fas fa-map-marker-alt fa-4x hvr-grow" id='three' style="color: #f80d65"><span>3</span></i></div>
+        <div><i class="fas fa-map-marker-alt fa-4x hvr-grow" id='four' style="color: #f80d65"><span>4</span></i></div>
+        <div><i class="fas fa-map-marker-alt fa-4x hvr-grow" id='five' style="color: #f80d65"><span>5</span></i></div>
+        <div><i class="fas fa-map-marker-alt fa-4x hvr-grow" id='six' style="color: #f80d65"><span>6</span></i></div>
+      
+      </div>
+      <!-- selection languages-->
+     
+      
+    
+      <div class="radio-toolbar">
+        <h6> select language for site:</h6>
+        <input type="radio" id="english" name="radioLanguages" value="english" checked>
+        <label for="english">English</label>
+    
+        <input type="radio" id="arabic" name="radioLanguages" value="arabic">
+        <label for="arabic">Arabic</label>
+    </div>
+     
+      <!-- save info --> 
+      <button type="" class="btn btn-success " id='save' >save</button>
+    </div>
+  
+</section>
+
+  <!--footer and copyrights -->
+<!--  <footer>
+  <div class="copy-right">
+    <span>
+Copyright &copy;
+<script>document.write(new Date().getFullYear());</script>
+<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">global conference management</a>
+</span>
+  </div>
+</footer>  --> 
+           
+
+  <!--================================== Jquery CDN Links & bootstap Links ========================================-->
+     <!--================================== Jquery CDN Links & bootstap Links ========================================-->
+     <script src="./js/jquery.js" type=''crossorigin="anonymous"></script>
+     <script src="./js/jquery-1.11.1.min.js" type=''crossorigin="anonymous"></script>
+     <script src="./js/popper.min.js" type=''crossorigin="anonymous"></script>
+     <script src="./js/bootstrap.min.js" type=''crossorigin="anonymous"></script>
+     <script src="./js/index.js" type=''crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>

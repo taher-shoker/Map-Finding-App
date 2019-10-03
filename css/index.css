@@ -1,0 +1,156 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+section {
+    min-height: 555px;
+    height:100%;
+   
+  }
+
+.set-point {
+    width: 84%;
+   height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    display: none;
+   
+
+}
+.set-point .title-screen{
+    text-transform: capitalize;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    color: #6c757d;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.set-point .map {
+  height: 100%;
+  position: relative
+  /*   position: relative;
+    width: inherit;
+    overflow: hidden;
+    padding: 3px;
+    border: 2px solid #ddd;
+    margin: 0 auto;
+    background: url('../imgs/newMap.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: inherit; */
+}
+.map i {
+    position: absolute;
+    color: #000;
+    font-size: 18px;
+    display: none;
+}
+
+
+.map img {
+    width: 100%;
+    height: 100%;
+}
+
+.set-point .selection-btns {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background: #ddd;
+    justify-content: space-evenly;
+    padding: 15px;
+    
+}
+.selection-btns i {
+    cursor: pointer;
+    position: relative
+}
+.selection-btns i span {
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+}
+
+
+
+  .radio-toolbar h6 {
+      padding: 10px 0;
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+  .radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  
+  .radio-toolbar label {
+      display: inline-block;
+      background-color: #ddd;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      border: 2px solid #444;
+      border-radius: 4px;
+  }
+  
+  .radio-toolbar label:hover {
+    background-color: #d7a360;
+    cursor: pointer;
+  }
+  
+  .radio-toolbar input[type="radio"]:focus + label {
+      border: 2px solid #444;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label {
+	background: #444;
+      color: #ffffff
+  }
+  #save {
+      margin-top: 10px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      font-size: 17px
+  }
+
+
+
+
+
+
+/*********** style for footer****************/
+footer {
+  width: 100%;
+  z-index: 555;
+  margin-top: 15px
+}
+footer .copy-right {
+  background: #6c757d;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px
+
+}
+.copy-right a{
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.copy-right a:hover{
+  color: #d7a360;
+  text-decoration: none
+
+}
+

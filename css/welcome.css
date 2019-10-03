@@ -1,0 +1,39 @@
+section {
+    position: relative;
+  }
+  .screen {
+    width: 100%;
+    height: auto;
+    max-height: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+     align-items: center; 
+   /*  position: relative;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0%; */
+  }
+  .cycle-img {
+    margin: 80px auto
+  }
+  .title {
+    text-transform: uppercase;
+    color: #f80d65;
+    padding-top: 40px;
+    font-size: 50px;
+    margin: 0;
+  }
+  .action {
+    display: flex
+  }
+  .action .touch-img {
+    width: 50px;
+    height: 50px;
+  }
+  .action h5 {
+    padding-top: 10px;
+    margin: 0;
+  }

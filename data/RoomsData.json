@@ -1,0 +1,125 @@
+{
+    "rooms":[
+    {
+        "id":1,
+        "name":"the summit",
+        "type":"hall",
+        "endPoint":"",
+        "info":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus vero deleniti facilis eos accusantium inventore, praesentium nobis consequatur vel recusandae!",
+        "events":[{
+            "id":1,
+            "title":"artifical intillgance",
+            "info":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus vero deleniti facilis eos accusantium inventore, praesentium nobis consequatur vel recusandae!",
+            "day":"Fri,Sept,2019",
+            "start":"",
+            "end":"",
+            "speaker":[{
+                "id":1,
+                "name":"Dr smith",
+                "job":"prof",
+                "img":"default-user.png"
+            },
+            {
+                "id":2,
+                "name":"Dr ali",
+                "job":"teacher",
+                "img":"default-user.png"
+            }
+        ]
+        },
+        {
+            "id":2,
+            "title":"web development",
+            "info":"text",
+            "day":"ihhkhkh",
+            "start":"ojljl",
+            "end":"jjljl",
+            "speaker":[{
+                "id":1,
+                "name":"Dr smith",
+                "job":"teacher",
+                "img":"default-user.png"
+            },
+            {
+                "id":2,
+                "name":"Dr ali",
+                "job":"teacher",
+                "img":"default-user.png"
+            }
+        ]
+        }],
+        "paths":[{
+            "id":1,
+            "pathPoint":"902.6,3034.5 902.6,2229.7 1266.3,2229.7 1266.3,972.2 1730.3,972.2 1730.3,815.7 1946.8,815.7",
+            "startPoint":"start1"
+        },
+        {
+            "id":2,
+            "pathPoint":"",
+            "startPoint":"start2"
+        }
+       
+    ]   
+    },
+    {
+        "id":2,
+        "name":"restaurant",
+        "type":"restaurant",
+        "end-point":"",
+        "info":"text",
+        "day":"ihhkhkh",
+        "start":"ojljl",
+        "end":"jjljl",
+        "events":[{
+            "id":1,
+            "title":"art",
+            "info":"text",
+            "speaker":[{
+                "id":1,
+                "name":"Dr smith",
+                "job":"prof",
+                "img":"default-user.png"
+            },
+            {
+                "id":2,
+                "name":"Dr-ali",
+                "job":"teacher",
+                "img":"default-user.png"
+            }
+        ]
+        },
+        {
+            "id":2,
+            "title":"web-devet",
+            "info":"text",
+            "day":"ihhkhkh",
+            "start":"ojljl",
+            "end":"jjljl",
+            "speaker":[{
+                "id":1,
+                "name":"Dr smith",
+                "job":"prof",
+                "img":"default-user.png"
+            },
+            {
+                "id":2,
+                "name":"Dr-ali",
+                "job":"prof",
+                "img":"default-user.png"
+            }
+        ]
+        }],
+        "paths":[{
+            "id":1,
+            "pathPoint":"2199.8,1125.2 2062.3,1033.1 1842.1,784.2 1591.7,1004.9 1268.2,1014.2 1268.2,2220.9 884.3,2220.9 884.3,3080",
+            "startPoint":"start1"
+        },
+        {
+            "id":2,
+            "pathPoint":"",
+            "startPoint":"start2"
+        }
+    ]   
+    }]
+    
+}
