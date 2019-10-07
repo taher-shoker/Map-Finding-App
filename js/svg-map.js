@@ -63,6 +63,26 @@ eventsHandler = {
 }
 
 
+/******************** */
+var selected = false;
+var svg = document.getElementById('map');
+
+var zoomOnElement = function(e) {
+    if (e.target === selected) {
+	// Deselect element
+	svg.setAttribute("viewBox", "0 0 600 400");
+	selected = false;
+    } else {
+	// Select element
+	selected = e.target;
+	var viewBox = selected.getAttribute('x');
+	viewBox += " " + selected.getAttribute('y')
+	viewBox += " " + selected.getAttribute('width')
+	viewBox += " " + selected.getAttribute('height')
+	svg.setAttribute("viewBox", viewBox);
+    }
+}
+
 
 
 

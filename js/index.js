@@ -4,7 +4,6 @@
 
 $(window).on('load',function(){
     localStorage.setItem('password','khalifa');
-    localStorage.setItem('startPoint','start1')
     $('#loginModal').modal('show');
 });
 

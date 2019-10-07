@@ -3,7 +3,7 @@
 /****initialize main screen****/
 
 
-$(document).ready(function(e) {
+/* $(document).ready(function(e) {
    
 	
 	
@@ -13,4 +13,4 @@ $(document).ready(function(e) {
 		});
 	});
 
-});/*****end doc ready***/
+});/*****end doc ready***/ 

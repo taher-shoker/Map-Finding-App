@@ -45,6 +45,12 @@ fetch(url).then(response => {
   console.log(err.message)
 });
 
+$(window).on('load',function(){
+ var start =localStorage.getItem('startPoint');
+ if(!start){
+  window.location.replace('index.html')
+ }
+});
 
 
 /**********  script for popup modal for rooms**************** */
@@ -82,7 +88,7 @@ $("svg").on('click', '.cls-8', function (e) {
         "July", "Aug", "Sept", "Oct", "Nov", "Dec"
       ];
       var monthName = monthNames[d.getMonth()];
-      var dayNum = d.getDay()
+      var dayNum = d.getDate()
      
 
       /***** get full year*****/
@@ -104,10 +110,11 @@ $("svg").on('click', '.cls-8', function (e) {
 $('.modal').on('click', '#direction', function () {
   $('.modal').modal('hide');
   var path = document.getElementById('one');
+  var d = document.getElementById('direction')
 
-  var i = $(this).data('location');
-  i = i - 1
-
+  var i = d.getAttribute('location');
+  
+console.log(i)
   paths[i].map(p => {
     if (p.startPoint === localStorage.getItem('startPoint')) {
       path.setAttribute('points', p.pathPoint);
@@ -121,8 +128,6 @@ $('#modalInfo').on('shown.bs.modal', function (e) {
   $(".events").empty()
   var i = $(e.relatedTarget).data('index');
   i = i - 1;
-
-
   $('.room-name').html(rooms[i].name);
   $('.info-text').html(rooms[i].info);
 
@@ -145,7 +150,7 @@ $('#modalInfo').on('shown.bs.modal', function (e) {
     ];
 
     
-    var dayNum = d.getDay()+1
+    var dayNum = d.getDate()
     var monthName = monthNames[d.getMonth()];
  console.log(d)
     /***** get full year*****/
@@ -172,12 +177,13 @@ $('#sidebarMenuInner').on('click', '.location', function (e) {
       path.setAttribute('points', p.pathPoint);
     }
   })
-  var data = path.getAttribute('points');
+
 
 })
 /***************** Script when Click On Map Elements **********/
 /******* Resturant location  ****** */
 $("svg").on('click', '.cls-17', function (e) {
+  var path = document.getElementById('one');
   var x;
   x = $(this).data('location')
   y = x - 1
@@ -192,7 +198,8 @@ $("svg").on('click', '.cls-17', function (e) {
   }) 
 });
 /******* WC location  ****** */
-$("svg").on('click', '.cls-7,.cls-12', function (e) {
+$("svg").on('click', '.cls-7', function (e) {
+  var path = document.getElementById('one');
   var x;
   x = $(this).data('location')
   y = x - 1
@@ -209,6 +216,7 @@ $("svg").on('click', '.cls-7,.cls-12', function (e) {
 
 /******* Studio location  ****** */
 $("svg").on('click', '.cls-14', function (e) {
+  var path = document.getElementById('one');
   var x;
   x = $(this).data('location')
   y = x - 1
@@ -225,6 +233,7 @@ $("svg").on('click', '.cls-14', function (e) {
 
 /******* others location  ****** */
 $("svg").on('click', '.cls-12', function (e) {
+  var path = document.getElementById('one');
   var x;
   x = $(this).data('location')
   y = x - 1
@@ -260,11 +269,11 @@ $('#sidebarMenuInner').on('click', 'li', function () {
 
 
 /***script for right icons ***/
-$(function () {
+/* $(function () {
   $('nav #setting').on('click', function () {
     window.location.replace('index.html')
   });
-});
+}); */
 
 $(function () {
   $('nav #toilet').on('click', function () {
@@ -301,7 +310,7 @@ $('svg').click(function () {
 
 /**************** script for toggle sidebar *************** */
 $('#sidebarMenu').on('click', function () {
-  $('#sidebarMenu').toggleClass('show')
+  $('#sidebarMenu').toggleClass('side-hide')
 
 })
 
@@ -317,11 +326,11 @@ $("body").niceScroll({
 
 
 });
-$("#sidebarMenu").niceScroll({
-  cursorcolor: "#0394c9", // change cursor color in hex
+ $(".sidebarMenuInner").niceScroll({
+  // change cursor color in hex
   emulatetouch: true,
   cursorborder: "none",
 
 });
-
+ 
 
