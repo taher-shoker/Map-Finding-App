@@ -3,7 +3,7 @@
 /****initialize main screen****/
 
 
- $(document).ready(function(e) {
+
    
 	
 $('.screen').on('tap', function(e) { 
@@ -11,5 +11,3 @@ $('.screen').on('tap', function(e) {
     window.location.replace("main.html");
   });
 });
-
-}); 
